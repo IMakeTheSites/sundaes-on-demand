@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import Row from "react-bootstrap";
+import { Row } from "react-bootstrap";
 import ScoopOption from "./ScoopOption";
 
 export default function Options({ optionType }) {
@@ -25,10 +25,5 @@ export default function Options({ optionType }) {
     />
   ));
 
-  return (
-    <>
-      <h2>Ice Cream</h2>
-      <Row>{optionItems}</Row>;
-    </>
-  );
+  return <Row>{optionItems}</Row>;
 }
