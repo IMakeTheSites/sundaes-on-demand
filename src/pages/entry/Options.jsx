@@ -25,5 +25,10 @@ export default function Options({ optionType }) {
     />
   ));
 
-  return <Row>{optionItems}</Row>;
+  return (
+    <>
+      <h2>Ice Cream</h2>
+      <Row>{optionItems}</Row>;
+    </>
+  );
 }
